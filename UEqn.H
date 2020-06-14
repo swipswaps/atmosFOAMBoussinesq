@@ -2,7 +2,6 @@
     fvVectorMatrix UEqn(
 		(nonlinear ? fvm::ddt(U) + fvm::div(phi, U) : fvm::ddt(U))
 	      + turbulence->divDevReff(U)
-//  	      + (2*fCoriolis ^ (U-UGeostrophic)) // Coriolis force with the geostrophic pressure. 
 	     ==
 		fvOptions(U)
     );

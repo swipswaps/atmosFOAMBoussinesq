@@ -140,18 +140,3 @@
         );
     }
 
-
-/*
-volTensorField AnisotropicDiffusion
-    (
-	IOobject
-    	(
-	"AnisotropicDiffusion",
-	runTime.timeName(),
-	mesh,
-            IOobject::MUST_READ,
-            IOobject::AUTO_WRITE
-	),
-	mesh
-    );
-*/

@@ -27,6 +27,9 @@ Application
 Description
  
 =======
+	0.6.1
+        -----
+		Changed to OF7
 	0.6.0
 	-----
 		* Changed to OF6.C	 
@@ -117,18 +120,6 @@ int main(int argc, char *argv[])
 
 	runTime.write();
 	
-//	Info << (nonlinear ? fvc::ddt(U) + fvc::div(phi, U) : fvc::ddt(U))->weightedAverage(mesh.V())  << endl;
-//	Info << turbulence->divDevReff(U)->weightedAverage(mesh.V()) << " " << endl;
-/*	(nonlinear ? fvm::ddt(U) + fvm::div(phi, U) : fvm::ddt(U))
-	      + turbulence->divDevReff(U)
-	     ==
-		fvOptions(U)
-    );
-
-	  - fvc::grad(p_rgh)
-          + g*rhok_tag
-*/
-
 
 	Info<< "ExecutionTime = " << runTime.elapsedCpuTime() << " s"
 			<< "  ClockTime = " << runTime.elapsedClockTime() << " s"
